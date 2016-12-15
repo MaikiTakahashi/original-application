@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Maid fan</title>
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<div class="header-all">
+<div class="menu navbar navbar-inverse navbar-static-top">
+<div class="container">
+
+  <div class="navbar-header">
+
+    <span class="header">
+      <%= image_tag 'new_Maidfan-logo', :class => "header-logo"  %>
+    </span>
+
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">メニュー</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+  </div>
+
+  <div class="navbar-collapse collapse">
+    <ul class=" nav navbar-nav navbar-right">
+        <li><a href="#">ホーム</a></li>
+<!--         <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">お知らせ</a>
+            <ul class="dropdown-menu">
+            <li><a href="#">人気のメイドさん</a></li>
+            <li><a href="#">新着のメイドさん</a></li>
+            </ul>
+        </li> -->
+        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="#">ブログ</a></li>
+    </ul>
+  </div>
+
+</div><!-- container -->
+</div>
+</div><!-- header-all -->
+
+<div class="carousel">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li> -->
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag 'maid1.jpg', :class => "carousel-image" %>
+      <div class="carousel-caption">
+      <h3>めいどりーみん</h3>
+      <p>No.1メイドカフェグループ</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <%= image_tag 'maid3.jpg', :class => "carousel-image"  %>
+      <div class="carousel-caption">
+      <h3>GRANDO PIRATES</h3>
+      <p>海賊船に乗って船長達と宴を楽しもう</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Controls -->
+<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+</div>
+</div><!--carousel-->
+
+<div class="container">
+
+<h3 class="title"><i class="fa fa-check" aria-hidden="true"></i> オススメメイド</h3>
+
+<div class="osusume-body">
+<div class="osusume-overflow">
+
+<div class="osusume-space">
+<!--<div class="col-md-3 col-sm-4">-->
+<div class="osusume">
+    <%= image_tag '20151108yumo00.jpg', :class => "maid-thumbnail" %>
+    <h5>ゆも</h5>
+    <div class="place">めいどりーみん</div>
+    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
+</div>
+<!--</div>-->
+</div>
+
+
+<div class="osusume-space">
+<!--<div class="col-md-3 col-sm-4">-->
+<div class="osusume">
+    <%= image_tag '20151108yumo00.jpg' %>
+    <h5>ゆも</h5>
+    <div class="place">めいどりーみん</div>
+    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
+</div>
+<!--</div>-->
+</div>
+
+<div class="osusume-space">
+<!--<div class="col-md-3 col-sm-4">-->
+<div class="osusume">
+    <%= image_tag '20151108yumo00.jpg' %>
+    <h5>ゆも</h5>
+    <div class="place">めいどりーみん</div>
+    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
+</div>
+<!--</div>-->
+</div>
+
+<div class="osusume-space">
+<!--<div class="col-md-3 col-sm-4">-->
+<div class="osusume">
+    <%= image_tag '20151108yumo00.jpg' %>
+    <h5>ゆも</h5>
+    <div class="place">めいどりーみん</div>
+    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
+</div>
+<!--</div>-->
+</div>
+
+</div><!-- osusume-overflow -->
+</div><!-- osusume-body -->
+
+</div><!-- container -->
+
+<div class="container">
+
+<h3 class="title"><i class="fa fa-comments-o" aria-hidden="true"></i> 新着メイド</h3>
+
+<div class="row">
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="new">
+    <%= image_tag '20151108yumo00.jpg' %>
+    <h5>ゆも</h5>
+    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
+</div>
+</div><!-- col -->
+
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="new">
+    <%= image_tag '20151108yumo00.jpg' %>
+    <h5>ゆも</h5>
+    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
+</div>
+</div><!-- col -->
+
+</div><!-- row -->
+
+</div><!-- container -->
+
+<div class="container">
+
+<h3 class="title"><i class="fa fa-heart-o" aria-hidden="true"></i> 人気メイド</h3>
+
+<div class="row">
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="popular">
+    <%= image_tag '20151108yumo00.jpg' %>
+    <h5>ゆも</h5>
+    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
+</div>
+</div><!-- col -->
+
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="popular">
+    <%= image_tag '20151108yumo00.jpg' %>
+    <h5>ゆも</h5>
+    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
+</div>
+</div><!-- col -->
+
+<div class="col-md-3 col-sm-4 col-xs-6">
+<div class="popular">
+    <%= image_tag '20151108yumo00.jpg' %>
+    <h5>ゆも</h5>
+    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
+</div>
+</div><!-- col -->
+</div><!-- row -->
+</div><!-- container -->
+
+<div class="footer well">
+
+<div class="container">
+
+<div class="row">
+<div class="col-sm-12">
+    <p>Copyright &copy; 2016 Maiki Takahashi</p>
+</div>
+
+</div><!-- col -->
+</div><!-- row -->
+
+</div><!-- container -->
+
+
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
