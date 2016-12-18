@@ -24,10 +24,6 @@ border-top: solid 1px #fff;
 border-radius: 0;
 margin-bottom: 0px}
 
-// <div class="header-all">…</div>
-// .menu li a {color: #fff !important}
-// .dropdown-menu li a {color: #fff !important}
-
 .menu .navbar-collapse
 {border-top-color: #fff;
 border-top-style: dashed;
@@ -67,6 +63,8 @@ background-color: #fff;
 .header-all{border-bottom: 1px solid #f0f0f0}
 
 /*見出し*/
+.title {margin: 20px 0 10px 0}
+
 .fa-check {color: #f92a78}
 .fa-comments-o {color: #f92a78}
 .fa-heart-o {color: #f92a78}
@@ -75,23 +73,33 @@ background-color: #fff;
 padding: 0px 10px 0px 10px}
 
 // 各メイド
-.maid-thumbnail {width: 100%;}
-
 h2 {margin: 20px 0 20px 0}
 
 h5 {font-size: 13px;
 font-weight: bold;
 margin: 5px 10px 5px 10px}
 
-.title {margin: 20px 0 10px 0}
-
-
 h3 {margin: 5px 10px 5px 10px;
 font-size: 20px;}
 
+.maid-thumbnail {width: 100%;}
+
+.osusume .thumbnail-time {position: relative;}
+
+.osusume .time {background-color: rgba(0,0,0,0.5);
+padding-left: 10px;
+color: #ffffff;
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+}
+
 .place {font-size: 11px;
 line-height: 16.5px;
-margin: 5px 10px 5px 10px}
+margin: 5px 10px 5px 10px;
+color: #949494;
+}
 
 .comment {font-size: 11px;
 margin: 5px 10px 5px 10px}
@@ -112,12 +120,20 @@ padding-right: 10px;
 .osusume {border: solid 1px #dddddd;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 599px) {
 .osusume {border: solid 1px #dddddd;
 width: 200%;}
 .osusume-space {display: table-cell;
 width: auto;
-padding-right: 80px;}
+padding-right: 70px;}
+}
+
+@media (min-width: 600)and(max-width: 768px) {
+.osusume {border: solid 1px #dddddd;
+width: 200%;}
+.osusume-space {display: table-cell;
+width: auto;
+padding-right: 100px;}
 }
 
 .new, .popular {border: solid 1px #dddddd;}
