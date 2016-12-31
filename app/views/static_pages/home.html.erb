@@ -35,14 +35,8 @@
   <div class="navbar-collapse collapse">
     <ul class=" nav navbar-nav navbar-right">
         <li><a href="#">ホーム</a></li>
-<!--         <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">お知らせ</a>
-            <ul class="dropdown-menu">
-            <li><a href="#">人気のメイドさん</a></li>
-            <li><a href="#">新着のメイドさん</a></li>
-            </ul>
-        </li> -->
-        <li><a href="#">お問い合わせ</a></li>
-        <li><a href="#">ブログ</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc7nHOfqxh_LD_3SVgv9oJjQRCCTkyd5MbWBrLLe7OqbwMfMg/viewform?c=0&w=1">お問い合わせ</a></li>
+        <li><a href="https://www.facebook.com/maikit?fref=nf">運営者</a></li>
     </ul>
   </div>
 
@@ -90,7 +84,7 @@
 
 <div class="container">
 
-<h3 class="title"><i class="fa fa-check" aria-hidden="true"></i> オススメメイド</h3>
+<h3 class="title"><i class="fa fa-check" aria-hidden="true"></i> オススメスタッフ</h3>
 
 <div class="osusume-body">
 <div class="osusume-overflow">
@@ -99,48 +93,27 @@
 <!--<div class="col-md-3 col-sm-4">-->
 <div class="osusume">
     <div class="thumbnail-time">
-      <%= image_tag '20151108yumo00.jpg', :class => "maid-thumbnail" %>
+      <%= image_tag 'https://scontent-nrt1-1.cdninstagram.com/t51.2885-19/s320x320/14730655_1727728750885878_5316895295966019584_a.jpg', :class => "maid-thumbnail" %>
       <div class="time">本日12:00~18:00</div>
     </div>
-    <h5>ゆも</h5>
-    <div class="place">めいどりーみん</div>
-    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
+    <h5>アン</h5>
+    <div class="place">不忍カフェ</div>
+    <div class="comment"><a href="http://blog.crooz.jp/ninjachan/">\\お殿さま、お姫さま// わたくし不忍カフェ 特別中忍 藤林アンと申しまする♪♪</a></div>
 </div>
 <!--</div>-->
-</div>
 
-
-<div class="osusume-space">
 <!--<div class="col-md-3 col-sm-4">-->
 <div class="osusume">
-    <%= image_tag '20151108yumo00.jpg', :class => "maid-thumbnail"  %>
-    <h5>ゆも</h5>
-    <div class="place">めいどりーみん</div>
-    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
+    <div class="thumbnail-time">
+      <%= image_tag 'https://pbs.twimg.com/profile_images/784775925443330053/xE4Td0H2_400x400.jpg', :class => "maid-thumbnail" %>
+      <div class="time">本日12:00~18:00</div>
+    </div>
+    <h5><%= @maid4.name %></h5>
+    <div class="place">リトルコスモ</div>
+    <div class="comment"><a href="https://twitter.com/airi_cosmo9"><%= @maid4.description %></a></div>
 </div>
 <!--</div>-->
-</div>
 
-<div class="osusume-space">
-<!--<div class="col-md-3 col-sm-4">-->
-<div class="osusume">
-      <%= image_tag '20151108yumo00.jpg', :class => "maid-thumbnail"  %>
-    <h5>ゆも</h5>
-    <div class="place">めいどりーみん</div>
-    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
-</div>
-<!--</div>-->
-</div>
-
-<div class="osusume-space">
-<!--<div class="col-md-3 col-sm-4">-->
-<div class="osusume">
-    <%= image_tag '20151108yumo00.jpg', :class => "maid-thumbnail"  %>
-    <h5>ゆも</h5>
-    <div class="place">めいどりーみん</div>
-    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
-</div>
-<!--</div>-->
 </div>
 
 </div><!-- osusume-overflow -->
@@ -150,55 +123,28 @@
 
 <div class="container">
 
-<h3 class="title"><i class="fa fa-comments-o" aria-hidden="true"></i> 新着メイド</h3>
-
-<div class="row">
-<div class="col-md-3 col-sm-4 col-xs-6">
-<div class="new">
-    <%= image_tag '20151108yumo00.jpg' %>
-    <h5>ゆも</h5>
-    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
-</div>
-</div><!-- col -->
-
-<div class="col-md-3 col-sm-4 col-xs-6">
-<div class="new">
-    <%= image_tag '20151108yumo00.jpg' %>
-    <h5>ゆも</h5>
-    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
-</div>
-</div><!-- col -->
-
-</div><!-- row -->
+<h3 class="title"><i class="fa fa-comments-o" aria-hidden="true"></i> 新着スタッフ</h3>
 
 </div><!-- container -->
 
 <div class="container">
 
-<h3 class="title"><i class="fa fa-heart-o" aria-hidden="true"></i> 人気メイド</h3>
+<h3 class="title"><i class="fa fa-heart-o" aria-hidden="true"></i> 人気スタッフ</h3>
 
 <div class="row">
 <div class="col-md-3 col-sm-4 col-xs-6">
 <div class="popular">
-    <%= image_tag '20151108yumo00.jpg' %>
-    <h5>ゆも</h5>
-    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
+    <%= image_tag 'https://pbs.twimg.com/profile_images/744092749301899265/p96mxxrq_400x400.jpg' %>
+    <h5>りか</h5>
+    <div class="comment"><a href="https://twitter.com/cosmo_rika">宇宙メイドリトルコスモのりかです♡エビ中と焼肉とお米が大好きな永遠の18歳です♡</a></div>
 </div>
 </div><!-- col -->
 
 <div class="col-md-3 col-sm-4 col-xs-6">
 <div class="popular">
-    <%= image_tag '20151108yumo00.jpg' %>
-    <h5>ゆも</h5>
-    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
-</div>
-</div><!-- col -->
-
-<div class="col-md-3 col-sm-4 col-xs-6">
-<div class="popular">
-    <%= image_tag '20151108yumo00.jpg' %>
-    <h5>ゆも</h5>
-    <div class="comment">こんにちわ初めまして！ゆもです(((o(*ﾟ▽ﾟ*)o)))♫</div>
+    <%= image_tag 'http://www.grand-pirates.jp/data/girl/6_1.jpg?1483057083' %>
+    <h5>ティファ</h5>
+    <div class="comment"><a href="http://www.grand-pirates.jp/profile.html?uid=6">はじめましてっ！ キミを笑顔にしますっっ！ 基本ひきこもりなのでアニメや声優さん、ゲームや音楽のお話で楽しくお話ししましょう♪</a></div>
 </div>
 </div><!-- col -->
 </div><!-- row -->

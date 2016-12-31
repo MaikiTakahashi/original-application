@@ -54,8 +54,8 @@ module Sass::Rails
       end
 
       config.assets.configure do |env|
-        env.register_engine '.sass', Sass::Rails::SassTemplate
-        env.register_engine '.scss', Sass::Rails::ScssTemplate
+        # エラーが出たので下記非表示
+        # env.register_engine '.sass', Sass::Rails::SassTemplate
 
         env.context_class.class_eval do
           class_attribute :sass_config
