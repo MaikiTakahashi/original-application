@@ -35,9 +35,7 @@ background-color: #fff}
 
 .navbar-collapse li a {display: inline-block;}
 
-.navbar-inverse .navbar-nav>li>a {color: #000000;
-padding-left: 25px;
-}
+.navbar-inverse .navbar-nav>li>a {color: #000000}
 
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {color: #000000}
 
@@ -70,27 +68,31 @@ background-color: #fff;
 .fa-check {color: #f92a78}
 .fa-comments-o {color: #f92a78}
 .fa-heart-o {color: #f92a78}
+.fa-home {color: #f92a78}
 
 .col-md-3, .col-sm-4, .col-xs-6 {margin: 0px 0px 10px 0px;
 padding: 0px 10px 0px 10px}
-
-.col-md-3{margin: 0px 0px 10px 0px;
-padding: 0px 20px 0px 20px}
 
 // 各メイド
 h2 {margin: 20px 0 20px 0}
 
 h5 {font-size: 13px;
 font-weight: bold;
-margin: 5px 10px 5px 10px;}
+margin: 5px 10px 5px 10px}
 
 h3 {margin: 5px 10px 5px 10px;
 font-size: 20px;}
 
-.osusume .thumbnail-time, .new .thumbnail-time, .popular .thumbnail-time {position: relative;}
+.maid-thumbnail {width: 100%;}
 
-.osusume .time, .new .time, .popular .time  {background-color: rgba(0,0,0,0.5);
-font-size: 11px;
+.osusume a:hover, .new a:hover, .popular a:hover{background-color: #fff;
+color: #000;
+text-decoration: underline;
+}
+
+.osusume .thumbnail-time {position: relative;}
+
+.osusume .time {background-color: rgba(0,0,0,0.5);
 padding-left: 10px;
 color: #ffffff;
 position: absolute;
@@ -99,6 +101,8 @@ left: 0;
 width: 100%;
 }
 
+.time {font-size: 12px;}
+
 .place {font-size: 11px;
 line-height: 16.5px;
 margin: 5px 10px 5px 10px;
@@ -106,12 +110,11 @@ color: #949494;
 }
 
 .comment {font-size: 11px;
-margin: 5px 10px 5px 10px;
-}
+margin: 5px 10px 5px 10px}
 
-.new, .popular {border: solid 1px #dddddd;}
+.osusume, .new, .popular {border: solid 1px #dddddd;}
 
-.new img, .popular img{width: 100%;
+.osusume img, .new img, .popular img{width: 100%;
 height: auto;
 vertical-align: bottom;
 display: block;
@@ -137,13 +140,32 @@ width: auto;
 padding-right: 10px;
 }
 
-.osusume {border: solid 1px #dddddd;
-width: 100%;}
+@media (max-width: 458px) {
+.osusume {width: 100%;}
+.osusume-space {display: table-cell;
+width: auto;
+padding-right: 10px;}
+.osusume .maid-thumbnail{height: 136px;
+width: 136px;}
+}
 
-.osusume img {width: auto;
-height: 138px;
-vertical-align: bottom;
-display: block;}
+@media (min-width: 459px)and(max-width: 991px) {
+.osusume {width: 100%;}
+.osusume-space {display: table-cell;
+width: auto;
+padding-right: 20px;}
+.osusume .maid-thumbnail{height: 235px;
+width: 235px;}
+}
+
+@media (min-width: 992px) {
+.osusume {width: 100%;}
+.osusume-space {display: table-cell;
+width: auto;
+padding-right: 20px;}
+.osusume .maid-thumbnail{height: 235px;
+width: 235px;}
+}
 
 @media (min-width: 768) and (max-width: 768){
 .osusume-space{padding: 0;}
@@ -156,10 +178,12 @@ margin-top: 10px}
 
 .footer p {margin: 0 0 3px 0;
 font-size: 12px;
-line-height: 1.4px}
+line-height: 1.4px;
+}
 
 .footer a {color: #666;
-text-decoration: none;}
+text-decoration: none;
+}
 
 // カルーセル
 .carousel {margin-bottom: 10px}
@@ -172,8 +196,5 @@ margin-right: auto;}
 .carousel {display: none}
 }
 
-.right.carousel-control, .left.carousel-control{
-opacity: 0.2;
-width: 7%;}
-
-.carousel-inner {height: 500px;}
+// 口コミ
+.info {font-size: 11px;}
