@@ -1,0 +1,201 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@charset "UTF-8";
+
+body {font-family: 'メイリオ',
+'Hiragino Kaku Gothic Pro', sans-serif;}
+
+/*ヘッダー*/
+.header {padding: 16px 0 0 10px;}
+
+.header a {margin: 0;
+font-size: 24px;
+line-height: 1;
+color: #000000;
+text-decoration: none;}
+
+.header-logo {height: 50px;
+width: auto;
+display: inline;}
+
+.menu {border: none;
+border-top: solid 1px #fff;
+border-radius: 0;
+margin-bottom: 0px}
+
+.menu .navbar-collapse
+{border-top-color: #fff;
+border-top-style: dashed;
+background-color: #fff}
+
+.menu .dropdown-menu {background-color: #000000}
+
+.navbar-header {background-color: #fff}
+
+.navbar-collapse li a {display: inline-block;}
+
+.navbar-inverse .navbar-nav>li>a {color: #000000}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {color: #000000}
+
+.navbar-inverse {background-color: #fff;}
+
+/* navbar ハンバーガー四角枠 */
+.navbar-inverse .navbar-toggle {
+border-color: #000000;
+}
+/* navbar ハンバーガー三本線 */
+.navbar-inverse .navbar-toggle .icon-bar {
+background-color: #000000;
+}
+
+/* navbar ハンバーガーボタン,タップとホバーした時の背景色 */
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+background-color: #fff;
+}
+
+
+.navbar-toggle{margin-top: 12px;}
+
+
+.header-all{border-bottom: 1px solid #f0f0f0}
+
+/*見出し*/
+.title {margin: 20px 0 10px 0}
+
+.fa-check {color: #f92a78}
+.fa-comments-o {color: #f92a78}
+.fa-heart-o {color: #f92a78}
+.fa-home {color: #f92a78}
+
+.col-md-3, .col-sm-4, .col-xs-6 {margin: 0px 0px 10px 0px;
+padding: 0px 10px 0px 10px}
+
+// 各メイド
+h2 {margin: 20px 0 20px 0}
+
+h5 {font-size: 13px;
+font-weight: bold;
+margin: 5px 10px 5px 10px}
+
+h3 {margin: 5px 10px 5px 10px;
+font-size: 20px;}
+
+.maid-thumbnail {width: 100%;}
+
+.osusume a:hover, .new a:hover, .popular a:hover{background-color: #fff;
+color: #000;
+text-decoration: underline;
+}
+
+.osusume .thumbnail-time {position: relative;}
+
+.osusume .time {background-color: rgba(0,0,0,0.5);
+padding-left: 10px;
+color: #ffffff;
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+}
+
+.time {font-size: 12px;}
+
+.place {font-size: 11px;
+line-height: 16.5px;
+margin: 5px 10px 5px 10px;
+color: #949494;
+}
+
+.comment {font-size: 11px;
+margin: 5px 10px 5px 10px;
+}
+
+.osusume, .new, .popular {border: solid 1px #dddddd;}
+
+.osusume img, .new img, .popular img{width: 100%;
+height: auto;
+vertical-align: bottom;
+display: block;
+margin: auto;}
+
+.osusume h1, .new h1, .popular h1 {margin: 0 0 20px 0;
+line-height: 1.2}
+
+.osusume p, .new p, .popular p {margin: 0 10px 5px 10px;
+font-size: 14px;
+line-height: 1.6}
+
+// オススメメイド
+.osusume-body{width:100%;
+overflow-x: auto;
+overflow-y: hidden;
+}
+
+.osusume-overflow {display: inline-table;}
+
+.osusume-space {display: table-cell;
+width: auto;
+padding-right: 10px;
+}
+
+@media (max-width: 458px) {
+.osusume {width: 100%;}
+.osusume-space {display: table-cell;
+width: auto;
+padding-right: 10px;}
+.osusume .maid-thumbnail{height: 136px;
+width: 136px;}
+}
+
+@media (min-width: 459px)and(max-width: 991px) {
+.osusume {width: 100%;}
+.osusume-space {display: table-cell;
+width: auto;
+padding-right: 20px;}
+.osusume .maid-thumbnail{height: 235px;
+width: 235px;}
+}
+
+@media (min-width: 992px) {
+.osusume {width: 100%;}
+.osusume-space {display: table-cell;
+width: auto;
+padding-right: 20px;}
+.osusume .maid-thumbnail{height: 235px;
+width: 235px;}
+}
+
+@media (min-width: 768) and (max-width: 768){
+.osusume-space{padding: 0;}
+}
+
+/*フッダー*/
+.footer {background-position: center top;
+text-align: center;
+margin-top: 10px}
+
+.footer p {margin: 0 0 3px 0;
+font-size: 12px;
+line-height: 1.4px;
+}
+
+.footer a {color: #666;
+text-decoration: none;
+}
+
+// カルーセル
+.carousel {margin-bottom: 10px}
+
+.carousel-image {display: block;
+margin-left: auto;
+margin-right: auto;}
+
+@media (max-width: 768px) {
+.carousel {display: none}
+}
+
+// 口コミ
+.info {font-size: 11px;}
