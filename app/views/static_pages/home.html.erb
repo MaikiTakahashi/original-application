@@ -93,14 +93,12 @@
 <!--<div class="col-md-3 col-sm-4">-->
 <div class="osusume">
     <div class="thumbnail-time">
-      <%= link_to "https://twitter.com/airi_cosmo9" do %>
       <%= image_tag 'https://pbs.twimg.com/profile_images/784775925443330053/xE4Td0H2_400x400.jpg', :class => "maid-thumbnail" %>
-      <% end %>
-      <div class="time"></div>
+      <div class="time">本日12:00~18:00</div>
     </div>
-    <h5>あいり</h5>
-    <a href="https://twitter.com/little_cosmo_?lang=ja"><div class="place">リトルコスモ</div></a>
-    <div class="comment">秋葉原の宇宙メイドカフェリトルコスモの、アイリーンことあいりです！</div>
+    <h5><%= @maid4.name %></h5>
+    <div class="place">リトルコスモ</div>
+    <div class="comment"><a href="https://twitter.com/airi_cosmo9"><%= @maid4.description %></a></div>
 </div>
 <!--</div>-->
 </div>
