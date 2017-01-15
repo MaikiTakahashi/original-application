@@ -136,11 +136,6 @@ overflow-y: hidden;
 
 .osusume-overflow {display: inline-table;}
 
-.osusume-space {display: table-cell;
-width: auto;
-padding-right: 10px;
-}
-
 @media (max-width: 458px) {
 .osusume {width: 100%;}
 .osusume-space {display: table-cell;
