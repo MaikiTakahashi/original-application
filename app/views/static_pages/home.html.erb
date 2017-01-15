@@ -93,12 +93,14 @@
 <!--<div class="col-md-3 col-sm-4">-->
 <div class="osusume">
     <div class="thumbnail-time">
-      <%= image_tag 'https://pbs.twimg.com/profile_images/784775925443330053/xE4Td0H2_400x400.jpg', :class => "maid-thumbnail" %>
+      <%= link_to "https://twitter.com/airi_cosmo9" do %>
+      <%= image_tag('https://pbs.twimg.com/profile_images/784775925443330053/xE4Td0H2_400x400.jpg', :class => "maid-thumbnail") %>
+      <% end %>
       <!--<div class="time">本日12:00~18:00</div>-->
     </div>
     <h5><%= @maid4.name %></h5>
     <div class="place">リトルコスモ</div>
-    <div class="comment"><a href="https://twitter.com/airi_cosmo9"><%= @maid4.description %></a></div>
+    <div class="comment"><%= @maid4.description %></a></div>
 </div>
 <!--</div>-->
 </div>
