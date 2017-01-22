@@ -8261,116 +8261,114 @@ h3 {
   display: inline-table;
 }
 
-/* line 139, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
-.osusume-space {
-  display: table-cell;
-  width: auto;
-  padding-right: 10px;
-}
-
 @media (max-width: 458px) {
-  /* line 145, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+  /* line 140, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
   .osusume {
     width: 100%;
   }
 
-  /* line 146, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+  /* line 141, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
   .osusume-space {
     display: table-cell;
     width: auto;
     padding-right: 10px;
   }
 
-  /* line 149, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+  /* line 144, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
   .osusume .maid-thumbnail {
     height: 136px;
     width: 136px;
   }
 }
 @media (min-width: 459px) and (max-width: 991px) {
-  /* line 154, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+  /* line 149, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
   .osusume {
     width: 100%;
   }
 
-  /* line 155, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+  /* line 150, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
   .osusume-space {
     display: table-cell;
     width: auto;
     padding-right: 20px;
   }
 
-  /* line 158, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+  /* line 153, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
   .osusume .maid-thumbnail {
     height: 235px;
     width: 235px;
   }
 }
 @media (min-width: 992px) {
-  /* line 163, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+  /* line 158, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
   .osusume {
-    width: 100%;
+    width: 235px;
   }
 
-  /* line 164, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+  /* line 159, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
   .osusume-space {
     display: table-cell;
-    width: auto;
+    width: 235px;
     padding-right: 20px;
   }
 
-  /* line 167, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+  /* line 162, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
   .osusume .maid-thumbnail {
     height: 235px;
     width: 235px;
   }
 }
 @media (min-width: 768) and (max-width: 768) {
-  /* line 172, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+  /* line 167, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
   .osusume-space {
     padding: 0;
   }
 }
 /*フッダー*/
-/* line 176, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+/* line 172, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
 .footer {
   background-position: center top;
   text-align: center;
   margin-top: 10px;
 }
 
-/* line 180, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+/* line 176, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
 .footer p {
   margin: 0 0 3px 0;
   font-size: 12px;
   line-height: 1.4px;
 }
 
-/* line 185, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+/* line 181, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
 .footer a {
   color: #666;
   text-decoration: none;
 }
 
-/* line 190, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+/* line 186, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
 .carousel {
   margin-bottom: 10px;
 }
 
-/* line 192, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+/* line 188, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
 .carousel-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* line 192, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+.carousel-control:hover {
+  opacity: 0.5;
+}
+
 @media (max-width: 768px) {
-  /* line 197, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+  /* line 195, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
   .carousel {
     display: none;
   }
 }
-/* line 201, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
+/* line 199, /home/ubuntu/private/maid_app/app/assets/stylesheets/custom.css.scss */
 .info {
   font-size: 11px;
 }
