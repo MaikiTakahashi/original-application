@@ -136,6 +136,10 @@ overflow-y: hidden;
 
 .osusume-overflow {display: inline-table;}
 
+.osusume-space {
+vertical-align: top;
+}
+
 @media (max-width: 458px) {
 .osusume {width: 100%;}
 .osusume-space {display: table-cell;
@@ -143,6 +147,10 @@ width: auto;
 padding-right: 10px;}
 .osusume .maid-thumbnail{height: 136px;
 width: 136px;}
+.osusume .maid-thumbnail-long{
+width: 136px;
+height: auto;
+}
 }
 
 @media (min-width: 459px)and(max-width: 991px) {
@@ -152,6 +160,10 @@ width: auto;
 padding-right: 20px;}
 .osusume .maid-thumbnail{height: 235px;
 width: 235px;}
+.osusume .maid-thumbnail-long{
+width: 235px;
+height: auto;
+}
 }
 
 @media (min-width: 992px) {
@@ -161,12 +173,15 @@ width: 235px;
 padding-right: 20px;}
 .osusume .maid-thumbnail{height: 235px;
 width: 235px;}
+.osusume .maid-thumbnail-long{
+width: 235px;
+height: auto;
+}
 }
 
 @media (min-width: 768) and (max-width: 768){
 .osusume-space{padding: 0;}
 }
-
 
 /*フッダー*/
 .footer {background-position: center top;
