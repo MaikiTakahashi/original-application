@@ -9,6 +9,7 @@ gem 'jquery-rails', '4.0.3'
 gem 'turbolinks',   '2.3.0'
 gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
+gem 'bcrypt',       '~> 3.1.7'
 
 # Googlemap
 gem "gmaps4rails"
@@ -31,4 +32,3 @@ group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
 end
-

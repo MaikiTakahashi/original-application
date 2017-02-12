@@ -1,0 +1,19 @@
+<% @osusume_maids.each do |osusume_maid| %>
+
+<div class="osusume-space">
+  <div class="osusume">
+    <div class="thumbnail-time">
+      <%= link_to image_tag(osusume_maid.thumbnail, :class => "maid-thumbnail"), osusume_maid.detail_url %>
+      <!--<div class="time">本日12:00~18:00</div>-->
+    </div>
+    <h5><%= osusume_maid.name %></h5>
+    <div class="place">
+      <%= link_to osusume_maid.place, osusume_maid.thumbnail_url %>
+    </div>
+    <div class="comment">
+      <%= osusume_maid.description %>
+    </div>
+  </div>
+</div>
+
+<% end %>

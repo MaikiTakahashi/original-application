@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-    @maid4 = Maid.find_by(:id => '4')
+    @osusume_maids = Maid.where(category: "osusume")
+    @popular_maids = Maid.where(category: "popular")
   end
 end

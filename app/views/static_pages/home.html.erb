@@ -79,61 +79,7 @@
 <div class="osusume-body">
 <div class="osusume-overflow">
 
-<div class="osusume-space">
-  <div class="osusume">
-      <div class="thumbnail-time">
-        <%= link_to "https://twitter.com/airi_cosmo9" do %>
-        <%= image_tag('https://pbs.twimg.com/profile_images/784775925443330053/xE4Td0H2_400x400.jpg', :class => "maid-thumbnail") %>
-        <% end %>
-        <!--<div class="time">本日12:00~18:00</div>-->
-      </div>
-      <h5><%= @maid4.name %></h5>
-      <a href="https://twitter.com/little_cosmo_?lang=ja"><div class="place">リトルコスモ</div></a>
-      <div class="comment"><%= @maid4.description %></a></div>
-  </div>
-</div>
-
-<div class="osusume-space">
-  <div class="osusume">
-      <div class="thumbnail-time">
-        <%= link_to "http://blog.crooz.jp/ninjachan/" do %>
-        <%= image_tag 'https://scontent-nrt1-1.cdninstagram.com/t51.2885-19/s320x320/14730655_1727728750885878_5316895295966019584_a.jpg', :class => "maid-thumbnail" %>
-        <% end %>
-        <div class="time"></div>
-      </div>
-      <h5>アン</h5>
-      <a href="http://shinobazu-cafe.com/"><div class="place">不忍カフェ</div></a>
-      <div class="comment">\\お殿さま、お姫さま// わたくし不忍カフェ 特別中忍 藤林アンと申しまする♪♪</div>
-  </div>
-</div>
-
-<div class="osusume-space">
-  <div class="osusume">
-      <div class="thumbnail-time">
-        <%= link_to "http://bunnysguild.com/cast/231.html" do %>
-        <%= image_tag 'https://pbs.twimg.com/profile_images/793248966372577280/rbFyUfa6_400x400.jpg', :class => "maid-thumbnail" %>
-        <% end %>
-        <div class="time"></div>
-      </div>
-      <h5>ラン</h5>
-      <a href="http://bunnysguild.com/"><div class="place">バニーズギルド</div></a>
-      <div class="comment">Bunny's Guildで見習いディーラーしてます。 コミュ障のラン雑対応。人見知り！</div>
-  </div>
-</div>
-
-<div class="osusume-space">
-  <div class="osusume">
-      <div class="thumbnail-time">
-        <%= link_to "http://mononopu.com/maids/%E9%95%B7%E5%AE%97%E6%88%91%E9%83%A8%E3%82%8A%E3%82%87%E3%81%86/" do %>
-        <%= image_tag 'http://mononopu.com/cms/wp-content/uploads/2016/09/048f1bdf4dd36b644c9bffcbe752264a1.jpg', :class => "maid-thumbnail-long" %>
-        <% end %>
-        <div class="time"></div>
-      </div>
-      <h5>長宗我部りょう</h5>
-      <a href="http://mononopu.com/"><div class="place">もののぷ</div></a>
-      <div class="comment">中学二年生の魔法科中学の魔法少女長宗我部りょうでござる！</div>
-  </div>
-</div>
+<%= render 'shared/maid_osusume' %>
 
 </div><!-- osusume-overflow -->
 </div><!-- osusume-body -->
@@ -151,27 +97,9 @@
 <h3 class="title"><i class="fa fa-heart-o" aria-hidden="true"></i> 人気スタッフ</h3>
 
 <div class="row">
-<div class="col-md-3 col-sm-4 col-xs-6">
-<div class="popular">
-    <%= link_to "https://twitter.com/cosmo_rika" do %>
-    <%= image_tag 'https://pbs.twimg.com/profile_images/744092749301899265/p96mxxrq_400x400.jpg' %>
-    <% end %>
-    <h5>りか</h5>
-    <a href="https://twitter.com/little_cosmo_?lang=ja"><div class="place">リトルコスモ</div></a>
-    <div class="comment">宇宙メイドリトルコスモのりかです♡エビ中と焼肉とお米が大好きな永遠の18歳です♡</div>
-</div>
-</div><!-- col -->
 
-<div class="col-md-3 col-sm-4 col-xs-6">
-<div class="popular">
-    <%= link_to "http://www.grand-pirates.jp/profile.html?uid=6" do %>
-    <%= image_tag 'http://www.grand-pirates.jp/data/girl/6_1.jpg?1483057083' %>
-    <% end %>
-    <h5>ティファ</h5>
-    <a href="http://www.grand-pirates.jp/"><div class="place">グランドパイレーツ</div></a>
-    <div class="comment">はじめましてっ！ キミを笑顔にしますっっ！ 基本ひきこもりなのでアニメや声優さん、ゲームや音楽のお話で楽しくお話ししましょう♪</div>
-</div>
-</div><!-- col -->
+<%= render 'shared/maid_popular' %>  
+  
 </div><!-- row -->
 </div><!-- container -->
 
@@ -209,6 +137,9 @@
 
 </div><!-- container -->
 
+<% if logged_in? %>
+<p>現在ログイン中</p>
+<% end %>
 
 <%= javascript_include_tag "static_pages.js" %>
 <script src="http://code.jquery.com/jquery.js"></script>

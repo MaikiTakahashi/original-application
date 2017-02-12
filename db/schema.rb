@@ -11,15 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161230232803) do
+ActiveRecord::Schema.define(version: 20170211230218) do
 
   create_table "maids", force: :cascade do |t|
-    t.string   "name",        limit: 255
-    t.string   "description", limit: 255
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
-    t.string   "time",        limit: 255
-    t.string   "place",       limit: 255
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "time"
+    t.string   "place"
+    t.string   "thumbnail"
+    t.string   "thumbnail_url"
+    t.string   "detail_url"
+    t.string   "category"
+    t.string   "email"
+    t.string   "password_digest"
   end
 
 end
