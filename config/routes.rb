@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   get 'logout', to: 'sessions#destroy'
-  get 'map/index'
+  get 'places/index'
   
   resources :maids
-  # resources :users
+  resources :users
+  resources :messages , except: [:index, :new]
 end

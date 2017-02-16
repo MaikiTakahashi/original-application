@@ -28,6 +28,12 @@ class MaidsController < ApplicationController
     end
   end
   
+  def show
+    @maid = Maid.find(params[:id])
+    @message = Message.new
+    @messages = Message.all
+  end
+  
   private
   
   def maid_params

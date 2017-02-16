@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170211230218) do
+ActiveRecord::Schema.define(version: 20170215215054) do
 
   create_table "maids", force: :cascade do |t|
     t.string   "name"
@@ -26,6 +26,35 @@ ActiveRecord::Schema.define(version: 20170211230218) do
     t.string   "category"
     t.string   "email"
     t.string   "password_digest"
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.string   "name"
+    t.string   "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "maid_id"
+  end
+
+  add_index "messages", ["maid_id"], name: "index_messages_on_maid_id"
+
+  create_table "places", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "title"
+    t.string   "description"
+    t.string   "address"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end
